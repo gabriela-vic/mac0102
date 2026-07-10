@@ -6,11 +6,13 @@
 }
 
 :root {
-    --bg-color: #141814;
-    --text-primary: #e6dbdb;
-    --text-secondary: #6c53da;
-    --accent-color: #54c04f; 
-    --border-color: #54c04f;
+    --bg-color: #12161b;
+    --text-primary: #ece7e1;
+    --text-secondary: #8b7ad8;
+    --accent-color: #4fae63;
+    --border-color: #3f6b4d;
+    --surface-color: #1b232a;
+    --shadow-color: rgba(0, 0, 0, 0.22);
     --font-serif: 'Lora', serif;
     --font-sans: 'Inter', sans-serif;
 }
@@ -43,7 +45,7 @@ body {
     font-family: var(--font-sans);
     position: sticky;
     top: 0;
-    background: #6c53da;
+    background: #2a223d;
     z-index: 100;
 }
 
@@ -77,6 +79,7 @@ body {
     padding: 80px 0 60px;
     border-bottom: 1px solid var(--border-color);
     margin-bottom: 60px;
+    background: linear-gradient(135deg, rgba(139, 122, 216, 0.12), rgba(79, 174, 99, 0.08));
 }
 
 .hero h1 {
@@ -123,11 +126,11 @@ p {
     width: 100%;
     max-width: 220px;
     aspect-ratio: 3 / 4;
-    border: 2px solid var(--border-color);
+    border: 1px solid var(--border-color);
     border-radius: 12px;
     overflow: hidden;
-    background: rgba(84, 192, 79, 0.08);
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    background: var(--surface-color);
+    box-shadow: 0 8px 24px var(--shadow-color);
 }
 
 .photo-frame img {
